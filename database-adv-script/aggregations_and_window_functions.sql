@@ -4,7 +4,7 @@ JOIN bookings ON bookings.user_id = users.id
 GROUP BY users.id, users.name;
 
 SELECT id, name,
-       RANK() OVER(ORDER BY total_bookings DESC) AS property_rank
+       ROW_NUMBER() OVER(ORDER BY total_bookings DESC) AS property_position
 FROM (
     SELECT properties.id, properties.name, COUNT(bookings.id) AS total_bookings
     FROM properties
