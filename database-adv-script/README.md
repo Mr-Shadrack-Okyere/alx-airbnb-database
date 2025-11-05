@@ -22,7 +22,7 @@ All queries are stored in the file: `subqueries.sql`
 
 # Aggregations and Window Functions
 
-This file contains queries that:
-
-- Count total bookings per user (using COUNT + GROUP BY)
-- Rank properties based on total bookings (using ROW_NUMBER window function)
+This file includes queries that:
+- Count total bookings per user
+- Rank properties using ROW_NUMBER
+- Rank properties using RANK
