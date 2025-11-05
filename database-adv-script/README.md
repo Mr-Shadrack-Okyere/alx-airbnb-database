@@ -17,3 +17,13 @@ This task contains two SQL subqueries:
 - A query to retrieve users who have made more than 3 bookings (correlated subquery)
 
 All queries are stored in the file: `subqueries.sql`
+
+--
+
+## Task 2 - Aggregations and Window Functions
+
+This task includes two queries:
+- A query to count total bookings for each user using COUNT and GROUP BY.
+- A window function using RANK() to rank properties by number of bookings.
+
+All queries are stored in `aggregations_and_window_functions.sql`
