@@ -1,22 +1,12 @@
-# Index Performance Testing
+# Index Performance Measurement
 
-## Why we added indexes
-We added indexes on columns that are used very often in queries, especially in:
-- WHERE conditions
-- JOIN conditions
-- ORDER BY clauses
+We created indexes to improve query performance on high-usage columns.
 
-Examples:
-- `bookings.user_id`
-- `bookings.property_id`
-- `users.email`
-- `properties.city`
+**Indexes created:**
+- users.id
+- bookings.user_id
+- properties.id
 
-These columns are important because they help improve performance when searching for users, properties or filtering bookings.
+Then we measured performance before and after applying the indexes using `EXPLAIN`.
 
-## Performance Check
-
-### Before adding indexes
-Example test:
-```sql
-EXPLAIN SELECT * FROM bookings WHERE user_id = 5;
+The EXPLAIN output after indexing showed faster query execution.
