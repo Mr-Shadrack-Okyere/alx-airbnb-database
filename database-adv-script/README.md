@@ -22,19 +22,7 @@ All queries are stored in the file: `subqueries.sql`
 
 # Aggregations and Window Functions
 
-This task includes two queries:
+This file contains queries that:
 
-1. Use `COUNT()` and `GROUP BY` to find the total number of bookings per user.
-2. Use a window function (`ROW_NUMBER()`) to rank properties based on the total number of bookings they have received.
-
-## Files
-
-| File | Description |
-|------|-------------|
-| aggregations_and_window_functions.sql | Contains SQL queries for aggregations and window functions |
-
-## Requirements
-
-- Use `COUNT()`
-- Use `GROUP BY`
-- Use a window function: `ROW_NUMBER()` or `RANK()`
+- Count total bookings per user (using COUNT + GROUP BY)
+- Rank properties based on total bookings (using ROW_NUMBER window function)
